@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/three.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Press+Start+2P|VT323" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<body>
+		<div class="heading">
+			Cellular Automaton Demo
+		</div>
+		<div class="secondary">Cellular Automaton:</div>
+		<table id="view">
+		</table>
+		<div class="page">
+			<h1>Usage Instructions:</h1>
+		</div>
+		<div class="secondary">&copy; Devyash Lodha, 2019. Written for CSE 355, Heni Ben Amor</div>
+		<div style="height: 302px;background-color: white;"></div>
+		<div id="control-pane">
+			<div id="code-pane">
+				<textarea id="code" resizable="false"></textarea>
+			</div>
+			<div id="controls">
+				<button id="run"></button>
+				<button id="reset"></button>
+				<button id="step"></button>
+				<p>Canvas Width:</p>
+				<input type="number" step="1" value="10" id="num-x">
+				<p>Canvas Height:</p>
+				<input type="number" step="1" value="10" id="num-y">
+				<p>Update Speed: (ms)</p>
+				<input type="number" step="1" value="15" id="update-speed">
+				<p>Cell Width:</p>
+				<input type="number" step="1" value="10" id="cell-width">
+				<p>Cell Height:</p>
+				<input type="number" step="1" value="10" id="cell-height">
+			</div>
+		</div>
+	</body>
+</html>
