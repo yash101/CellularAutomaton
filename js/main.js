@@ -303,5 +303,9 @@
 		$("#code-btn").click(function() {
 			window.open("https://github.com/yash101/CellularAutomaton");
 		});
+
+		$("#ben-amor").click(function() {
+			window.open("https://randomaccessmemory.stream/dev/null/super.turing.pdf");
+		});
 	});
 }) ();

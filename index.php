@@ -27,6 +27,7 @@
 		<div class="secondary">Cellular Automaton:</div>
 		<button id="fullscreen-btn" class="fullscreen"></button>
 		<button id="code-btn"></button>
+		<button id="ben-amor"></button>
 		<table id="view" class="hidden">
 		</table>
 		<div class="page">
