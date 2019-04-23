@@ -14,7 +14,7 @@
 		if (isset($_REQUEST["shared_uri"])) {
 ?>
 
-			window.shared_code = window.location.search.substring(window.location.search.indexOf("shared_uri=") + "shared_uri=".length);
+			window.shared_code = JSON.parse(decodeURI(window.location.search.substring(window.location.search.indexOf("shared_uri=") + "shared_uri=".length)));
 			window.from_shared_uri = true;
 <?php
 		}
