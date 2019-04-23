@@ -249,6 +249,8 @@
 
 	$(document).ready(function init() {
 		if (window.from_shared_uri === true) {
+			console.log("shared uri provided");
+			shared_code = JSON.parse(shared_code);
 			window.load(shared_code);
 //			window.loadJson(window.location.hash.substring(1));
 		}
