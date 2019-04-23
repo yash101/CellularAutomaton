@@ -4,12 +4,30 @@ body
 	left: 0px;
 	right: 0px;
 	margin: 0px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 12px;
+}
+
+pre
+{
+	font-family: 'VT323', cursive;
+	font-size: 1em;
+}
+
+.inlblk
+{
+	display: inline-block;
 }
 
 table
 {
 	border-collapse: collapse;
 	margin: 8px;
+}
+
+.marked
+{
+	background-color: #404040;
 }
 
 .ccol
@@ -47,14 +65,27 @@ table
 
 .page
 {
-	font-size: 16px;
+	font-size: 2em;
 	padding: 16px;
 	background-color: #C6C6C6;
 	color: #404040;
 	width: 100%;
 	margin: 0px;
-	font-family: 'Press Start 2P', cursive;
+	font-family: 'Open Sans Condensed', cursive;
 	box-sizing: border-box;
+	text-align: center;
+}
+
+#page-container
+{
+	width: 100%;
+	max-width: 800px;
+	border: 1px dashed #404040;
+	padding: 32px;
+	padding-top: 0px;
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: left;
 }
 
 #control-pane
@@ -86,12 +117,13 @@ table
 	padding: 16px;
 	border: 16px solid #404040;
 	box-sizing: border-box;
+	font-family: 'VT323', cursive;
 }
 
 #controls
 {
 	float: right;
-	flex: 0 0 160px;
+	flex: 0 0 180px;
 	justify-content: space-evenly;
 	height: 100%;
 	margin-left: 8px;
@@ -104,9 +136,10 @@ table
 {
 	margin: 0px;
 	margin-top: 4px;
+	font-family: 'VT323', cursive;
 }
 
-#controls > button
+button
 {
 	display: inline-block;
 	width: 32px;
@@ -115,12 +148,49 @@ table
 	border: 1px solid #404040;
 }
 
-#controls > button:hover,
-#controls > button:active
+button:hover,
+button:active
 {
 	background-color: #404040;
 	color: #C6C6C6;
 	border: 1px solid white;
+}
+
+.btn-br-run {
+	background-image: url("../img/icons/play.svg");
+}
+
+.btn-br-pause {
+	background-image: url("../img/icons/pause.svg");
+}
+
+#save
+{
+	background-image: url("../img/icons/save.svg");
+	background-size: contain;
+}
+
+#run
+{
+	background-size: contain;
+}
+
+#reset
+{
+	background-image: url("../img/icons/trash.svg");
+	background-size: contain;
+}
+
+#step
+{
+	background-image: url("../img/icons/next.svg");
+	background-size: contain;
+}
+
+#share
+{
+	background-image: url("../img/icons/share.svg");
+	background-size: contain;
 }
 
 #controls > input
@@ -142,4 +212,36 @@ table
 	right: 10px;
 	top: 0;
 	content: "ms";
+}
+
+.hidden
+{
+	display: none !important;
+}
+
+#fullscreen-btn
+{
+	position: fixed;
+	top: 8px;
+	right: 48px;
+	background-size: contain;
+}
+
+.fullscreen
+{
+	background-image: url("../img/icons/fullscreen.svg");
+}
+
+.exit-fullscreen
+{
+	background-image: url("../img/icons/exit_fullscreen.svg");
+}
+
+#code-btn
+{
+	position: fixed;
+	top: 8px;
+	right: 8px;
+	background-size: contain;
+	background-image: url("../img/icons/code.svg");
 }
