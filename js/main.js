@@ -231,8 +231,7 @@
 		window.location.search = "shared_uri=" + encodeURI(JSON.stringify(obj));
 	};
 
-	window.loadJson = function(code) {
-		var obj = JSON.parse(decodeURI(code));
+	window.load = function(obj) {
 		$("#code").val(obj.code);
 		$("#num-x").val(obj.nw);
 		$("#num-y").val(obj.nh);
@@ -245,9 +244,9 @@
 	// We pass in a Image to the functions
 
 	$(document).ready(function init() {
-		if (window.location.hash !== "") {
-			console.log("Loading from hash...");
-			window.loadJson(window.location.hash.substring(1));
+		if (window.from_shared_uri === true) {
+			window.load(shared_code);
+//			window.loadJson(window.location.hash.substring(1));
 		}
 		$("#share").click(window.share);
 		$("#run").click(window.play);
