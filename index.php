@@ -10,14 +10,14 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 
 		<script type="text/javascript">
-<?php
+//<?php
 		if (isset($_REQUEST["shared_uri"])) {
-?>
+//?>
 			window.shared_code = <?php echo $_REQUEST["shared_uri"]; ?>;
 			window.from_shared_uri = true;
-<?php
+//<?php
 		}
-?>
+//?>
 		</script>
 	</head>
 
