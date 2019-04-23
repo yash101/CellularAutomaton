@@ -6,7 +6,7 @@
 	window.links.forceLoad = function(loc) {
 		var uri = window.location.origin + window.location.pathname + "?shared_uri=" + loc;
 		window.location.replace(uri);
-		window.location.reload();
+//		window.location.reload();
 	};
 	window.setGridSize = function setsize(x, y) {
 		window.initialized = true;
