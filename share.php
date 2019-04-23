@@ -1,6 +1,7 @@
 <?php
 $tm = time();
 $fil = "shared_code/" . string($tm) . ".shared.txt";
+echo $fil;
 if (strlen($_REQUEST["shared_code"] > 16384)) {
 	die("File too large");
 }
