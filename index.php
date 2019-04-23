@@ -8,6 +8,17 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300|VT323" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<script type="text/javascript">
+<?php
+		if (isset($_REQUEST["shared_uri"])) {
+?>
+			window.shared_code = <?php echo $_REQUEST["shared_uri"]; ?>;
+			window.from_shared_uri = true;
+<?php
+		}
+?>
+		</script>
 	</head>
 
 	<body>
